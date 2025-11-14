@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #315d8c; /* warna biru background */
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.card {
+  background: #5f95c6; /* warna kartu */
+  border-radius: 30px;
+  padding: 40px;
+  width: 500px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Foto profil di tengah */
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Nama di bawah foto */
+.name {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 55px;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Teks perkenalan */
+.intro p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Teks “Mau kenalan lebih lanjut?” */
+.intro h2 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+/* Panah klikable di bawah teks */
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 40px solid black;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.arrow:hover {
+  transform: translateX(10px);
+}
+
+/* Dekorasi bintang */
+.star {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #23436b;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.star-top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.star-bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #2e5b87;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Kotak utama */
+.container {
+  background-color: #3b6a96;
+  border-radius: 25px;
+  padding: 40px;
+  width: 80%;
+  max-width: 900px;
+  color: white;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Judul */
+h1 {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 36px;
+  margin-bottom: 30px;
+  background-color: #1e3e5c;
+  padding: 8px 0;
+  border-radius: 8px;
+}
+
+/* Layout kiri & kanan */
+.biodata-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Kolom kiri dan kanan */
+.left, .right {
+  flex: 1;
+  min-width: 320px;
+}
+
+/* Kotak item biodata */
+.item {
+  background-color: #4a8fbf;
+  color: white;
+  padding: 15px;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: inset 0 0 6px rgba(255,255,255,0.3);
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.03);
+  background-color: #5aa7d6;
+}
+
+/* Tombol kembali */
+.back-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #00aaff;
+  color: white;
+  border-radius: 25px;
+  padding: 8px 15px;
+  font-size: 14px;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+/* Panah kiri */
+.back-btn::before {
+  content: "◀";
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.back-btn:hover {
+  background: #0088cc;
+  transform: scale(1.05);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #2e5b87 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #4a8fbf;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+h1 {
+  background: black;
+  color: white;
+  font-size: 32px;
+  padding: 10px 40px;
+  border-radius: 50px;
+  margin-bottom: 40px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu a {
+  background: black;
+  color: white;
+  font-size: 22px;
+  padding: 8px 30px;
+  border-radius: 40px;
+  font-style: italic;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.menu a:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+
+/* Tombol back di luar kotak */
+.back-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  background: #00aaff;
+  color: white;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+}
+
+.back-btn::before {
+  content: "◀";
+  margin-right: 5px;
+}
+
+.back-btn:hover {
+  background: #0088cc;
+  transform: scale(1.05);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #2e5b87 100%);
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Kotak utama */
+.container {
+  background-color: rgba(46, 91, 135, 0.9);
+  border-radius: 25px;
+  padding: 40px;
+  width: 80%;
+  max-width: 900px;
+  color: white;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Judul */
+h1 {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 40px;
+  margin-bottom: 30px;
+  background-color: #1e3e5c;
+  padding: 8px 0;
+  border-radius: 10px;
+}
+
+/* Kotak teks keahlian */
+.skills-box {
+  background-color: #3b6a96;
+  padding: 20px 25px;
+  border-radius: 20px;
+  line-height: 1.7;
+  font-size: 16px;
+  box-shadow: inset 0 0 8px rgba(255,255,255,0.3);
+}
+
+/* Tombol kembali */
+.back-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #00aaff;
+  color: white;
+  border-radius: 25px;
+  padding: 8px 15px;
+  font-size: 14px;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+/* Panah kiri */
+.back-btn::before {
+  content: "◀";
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.back-btn:hover {
+  background: #0088cc;
+  transform: scale(1.05);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #2e5b87 100%);
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Kotak utama */
+.container {
+  background-color: rgba(72, 115, 158, 0.9);
+  border-radius: 25px;
+  padding: 30px;
+  width: 90%;
+  max-width: 1100px;
+  color: white;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+/* Judul */
+h1 {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 40px;
+  margin-bottom: 30px;
+  background-color: #1e3e5c;
+  padding: 8px 0;
+  border-radius: 10px;
+  color: white;
+}
+
+/* Galeri sertifikat */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.gallery img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Kotak deskripsi */
+.desc-box {
+  background: #355a7d;
+  border-radius: 25px;
+  padding: 20px;
+  text-align: left;
+  line-height: 1.7;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 15px;
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.2);
+}
+
+/* Tombol Back */
+.back-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #00aaff;
+  color: white;
+  border-radius: 25px;
+  padding: 8px 15px;
+  font-size: 14px;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.back-btn::before {
+  content: "◀";
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.back-btn:hover {
+  background: #0088cc;
+  transform: scale(1.05);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #2e5b87 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #1e3e5c;
+  color: white;
+  width: 80%;
+  max-width: 900px;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  background: #4a8fbf;
+  color: white;
+  font-size: 36px;
+  padding: 10px 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto 40px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  border: 2px solid #4a8fbf;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: justify;
+}
+
+/* Tombol Back bulat biru terang */
+.back-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #00aaff;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #0090dd;
+  transform: scale(1.05);
+}
+
+/* Panah putih di kiri tombol */
+.back-btn::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 10px solid white;
+  transform: rotate(180deg);
+}
+
